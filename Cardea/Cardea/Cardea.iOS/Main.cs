@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Fitbit_Data_Analysis_App.iOS
+namespace Cardea.iOS
 {
 	public class Application
 	{
