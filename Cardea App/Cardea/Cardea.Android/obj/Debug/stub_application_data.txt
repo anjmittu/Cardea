@@ -1,2 +1,0 @@
-android.app.Application
-Fitbit_Data_Analysis_App.Android

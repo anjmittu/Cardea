@@ -1,9 +1,0 @@
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.Android\obj\Debug\Cardea.Android.csproj.CoreCompileInputs.cache
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.Android\obj\Debug\Fitbit_Data_Analysis_App.Droid.LoginPage.xaml.g.cs
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.Android\obj\Debug\Fitbit_Data_Analysis_App.Droid.App.xaml.g.cs
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.Android\obj\Debug\Fitbit_Data_Analysis_App.Android.dll
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.Android\obj\Debug\Fitbit_Data_Analysis_App.Android.pdb
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Cardea App\Cardea\Cardea.Android\obj\Debug\Cardea.Android.csprojResolveAssemblyReference.cache
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Cardea App\Cardea\Cardea.Android\obj\Debug\Cardea.Android.csproj.CoreCompileInputs.cache
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Cardea App\Cardea\Cardea.Android\obj\Debug\Fitbit_Data_Analysis_App.Android.dll
-C:\Users\nickm\Fitbit_Data_Analysis_Back\Cardea App\Cardea\Cardea.Android\obj\Debug\Fitbit_Data_Analysis_App.Android.pdb
