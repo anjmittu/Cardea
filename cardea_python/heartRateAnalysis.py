@@ -32,8 +32,7 @@ class heartRateAnalysis:
 
             enddate = (startdate - timedelta(days=1))
 
-            total, fatBurn, cardio, peak = [0, 0, 0, 0];
-            resting = 0;
+            total, resting, fatBurn, cardio, peak = [0, 0, 0, 0, 0];
 
             # Tally up the different heartrate zones per the week
             for day in heartRate_data["activities-heart"]:
