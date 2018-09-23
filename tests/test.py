@@ -1,4 +1,4 @@
-import heartRateAnalysis
+import cardea_python.heartRateAnalysis
 
 hra = heartRateAnalysis.heartRateAnalysis("6KT96H", "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2S1Q5NkgiLCJhdWQiOiIyMkQ3QjkiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyd2VpIHJociByYWN0IHJudXQgcnNsZSIsImV4cCI6MTUzNzY5NzQ1MiwiaWF0IjoxNTM3NjY4NjUyfQ.WsFw9PONJlCd384YWSmCnzFvtCI_2VxeIXL91-a5Jkg")
 
