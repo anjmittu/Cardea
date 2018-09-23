@@ -19,7 +19,7 @@ class CardeaSleep(Resource):
         return sa.sleep_and_exercise(startdate, enddate)
 
 
-api.add_resource(CardeaSleep, '/')
+api.add_resource(CardeaSleep, '/CardeaSleep')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=80, debug=True)
