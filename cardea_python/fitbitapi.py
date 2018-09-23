@@ -23,7 +23,7 @@ class FitbitApi:
         r = requests.get(self.fitbit_url.format(self.userid, urlend), headers=self.header)
         return r.json()
 
-    def get_weight_by_date(self, date):
-        urlend = "body/log/weight/date/{}.json".format(date)
+    def get_weight_by_date_range(self, startdate, enddate):
+        urlend = "body/log/weight/date/{}/{}.json".format(startdate, enddate)
         r = requests.get(self.fitbit_url.format(self.userid, urlend), headers=self.header)
         return r.json()
