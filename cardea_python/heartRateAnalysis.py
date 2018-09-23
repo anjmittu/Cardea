@@ -25,8 +25,7 @@ class heartRateAnalysis:
                 weightLoss_data = 0;
             enddate = (startdate - timedelta(days=1))
 
-            total, fatBurn, cardio, peak = [0, 0, 0, 0];
-            resting = 0;
+            total, resting, fatBurn, cardio, peak = [0, 0, 0, 0, 0];
 
             for day in heartRate_data["activities-heart"]:
                 for heartRate_range in day["value"]["heartRateZones"]:
