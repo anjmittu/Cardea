@@ -3,8 +3,4 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Cardea.HomePage">
   <!--Pages can be added as references or inline-->
-  <ContentPage Title="Sleep" />
-  <ContentPage Title="Heart Rate" />
-  <ContentPage Title="Activity" />
-  <ContentPage Title="Calories" />
 </TabbedPage>

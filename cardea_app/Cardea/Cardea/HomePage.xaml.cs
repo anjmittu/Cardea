@@ -15,6 +15,7 @@ namespace Cardea
         public HomePage ()
         {
             InitializeComponent();
+            Children.Add(new Sleep());
         }
     }
 }
