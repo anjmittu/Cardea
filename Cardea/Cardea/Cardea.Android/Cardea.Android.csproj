@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{13EA8AFA-4533-4973-8AB5-683E766F02FD}</ProjectGuid>
+    <ProjectGuid>{FD31B737-FB77-4056-8935-D492AF56583E}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Fitbit_Data_Analysis_App.Droid</RootNamespace>
-    <AssemblyName>Fitbit_Data_Analysis_App.Android</AssemblyName>
+    <RootNamespace>Cardea.Droid</RootNamespace>
+    <AssemblyName>Cardea.Android</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
@@ -115,7 +115,7 @@
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
-  <Import Project="..\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.projitems" Label="Shared" Condition="Exists('..\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.projitems')" />
+  <Import Project="..\Cardea\Cardea.projitems" Label="Shared" Condition="Exists('..\Cardea\Cardea.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

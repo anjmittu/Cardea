@@ -1,25 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Fitbit_Data_Analysis_App"
-             x:Class="Fitbit_Data_Analysis_App.LoginPage">
+             xmlns:local="clr-namespace:Cardea"
+             x:Class="Cardea.LoginPage">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
-         </Grid.RowDefinitions>
-        
+        </Grid.RowDefinitions>
+
         <WebView Grid.Row="0" x:Name="WebView"
           IsVisible="false"
           HeightRequest="1000"
           WidthRequest="1000"
           Navigated="webOnEndNavigating" />
-        
+
         <StackLayout Grid.Row="0" HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="Cardea" TextColor="Black" FontSize="30" XAlign="Center" x.Name="LoginLabel"></Label>
+            
             <Button Text="Login With FitBit" Clicked="Login" FontSize="25" TextColor="Black" x:Name="LoginButton"></Button>
         </StackLayout>
     </Grid>
-
 
 </ContentPage>

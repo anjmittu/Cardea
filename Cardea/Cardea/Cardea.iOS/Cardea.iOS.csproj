@@ -5,12 +5,12 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{F729CCF6-743E-4772-B60F-C953F2BD23E9}</ProjectGuid>
+    <ProjectGuid>{18DE4A40-7875-4DD5-BD2F-5F7F3053A855}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Fitbit_Data_Analysis_App.iOS</RootNamespace>
+    <RootNamespace>Cardea.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Fitbit_Data_Analysis_App.iOS</AssemblyName>
+    <AssemblyName>Cardea.iOS</AssemblyName>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
   </PropertyGroup>
@@ -133,7 +133,7 @@
     </Reference>
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
-  <Import Project="..\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.projitems" Label="Shared" Condition="Exists('..\Fitbit_Data_Analysis_App\Fitbit_Data_Analysis_App.projitems')" />
+  <Import Project="..\Cardea\Cardea.projitems" Label="Shared" Condition="Exists('..\Cardea\Cardea.projitems')" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.247\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

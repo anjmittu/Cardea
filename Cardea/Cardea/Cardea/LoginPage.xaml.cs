@@ -5,13 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace Fitbit_Data_Analysis_App
+namespace Cardea
 {
-    public partial class LoginPage : ContentPage
-    {
-        public LoginPage()
-        {
-            InitializeComponent();
+	public partial class LoginPage : ContentPage
+	{
+		public LoginPage()
+		{
+			InitializeComponent();
             WebView.Source = "https://www.fitbit.com";
         }
 
@@ -19,12 +19,12 @@ namespace Fitbit_Data_Analysis_App
         {
             WebView.IsVisible = true;
             LoginButton.IsVisible = false;
-            LoginLabel.IsVisible = false;
+            //LoginLabel.IsVisible = false;
         }
 
         void webOnEndNavigating(object sender, WebNavigatedEventArgs e)
         {
-            
+
         }
     }
 }

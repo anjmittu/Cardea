@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Fitbit_Data_Analysis_App.iOS
+namespace Cardea.iOS
 {
 	// The UIApplicationDelegate for the application. This class is responsible for launching the 
 	// User Interface of the application, as well as listening (and optionally responding) to 
@@ -23,7 +23,7 @@ namespace Fitbit_Data_Analysis_App.iOS
 		public override bool FinishedLaunching(UIApplication app, NSDictionary options)
 		{
 			global::Xamarin.Forms.Forms.Init ();
-			LoadApplication (new Fitbit_Data_Analysis_App.App ());
+			LoadApplication (new Cardea.App ());
 
 			return base.FinishedLaunching (app, options);
 		}

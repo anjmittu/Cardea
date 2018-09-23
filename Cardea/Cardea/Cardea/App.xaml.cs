@@ -5,7 +5,7 @@ using System.Text;
 
 using Xamarin.Forms;
 
-namespace Fitbit_Data_Analysis_App
+namespace Cardea
 {
 	public partial class App : Application
 	{
@@ -13,7 +13,7 @@ namespace Fitbit_Data_Analysis_App
 		{
 			InitializeComponent();
 
-			MainPage = new Fitbit_Data_Analysis_App.LoginPage();
+			MainPage = new Cardea.LoginPage();
 		}
 
 		protected override void OnStart ()

@@ -9,9 +9,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Android.Runtime.ResourceDesignerAttribute("Fitbit_Data_Analysis_App.Droid.Resource", IsApplication=true)]
+[assembly: global::Android.Runtime.ResourceDesignerAttribute("Cardea.Droid.Resource", IsApplication=true)]
 
-namespace Fitbit_Data_Analysis_App.Droid
+namespace Cardea.Droid
 {
 	
 	
@@ -26,7 +26,7 @@ namespace Fitbit_Data_Analysis_App.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Fitbit_Data_Analysis_App.Droid.Resource.Attribute.actionBarSize;
+			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Cardea.Droid.Resource.Attribute.actionBarSize;
 		}
 		
 		public partial class Animation
