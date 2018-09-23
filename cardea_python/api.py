@@ -19,7 +19,7 @@ class CardeaSleep(Resource):
         return sa.sleep_and_exercise(startdate, enddate)
 
 
-api.add_resource(CardeaAuth, '/')
+api.add_resource(CardeaSleep, '/')
 
 if __name__ == '__main__':
     app.run(debug=True)
