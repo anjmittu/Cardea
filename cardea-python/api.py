@@ -16,7 +16,8 @@ class CardeaSleep(Resource):
         enddate = today.strftime('%Y-%m-%d')
         startdate = (today - timedelta(days=30)).strftime('%Y-%m-%d')
         sa = SleepAnalysis(userid, auth_tok)
-        sa.sleep_and_exercise(startdate, enddate)
+        return sa.sleep_and_exercise(startdate, enddate)
+
 
 api.add_resource(CardeaAuth, '/')
 
