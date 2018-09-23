@@ -2,17 +2,17 @@ import fitbitapi
 
 class SleepAnalysis:
 
-    def __init__(self):
-        self.fb = FitbitApi()
+    def __init__(self, userid, auth_tok):
+        self.fb = FitbitApi(userid, auth_tok)
 
-    def sleep_and_exercise(userid, startdate, enddate):
+    def sleep_and_exercise(startdate, enddate):
         sleep_with_exercise = []
         sleep_without_exercise = []
 
-        sleep_data = self.fb.get_sleep_by_date_range(userid, startdate, enddate)
+        sleep_data = self.fb.get_sleep_by_date_range(startdate, enddate)
         for night_of_sleep in sleep_data["sleep"]:
             if night_of_sleep["isMainSleep"]:
-                exercise_data = self.fb.get_exercise_by_date(userid, sleep_data["dateOfSleep"])
+                exercise_data = self.fb.get_exercise_by_date(sleep_data["dateOfSleep"])
                 if len(exercise_data["activities"]) > 1:
                     sleep_with_exercise.append(sleep_data["minutesAsleep"])
                 else:

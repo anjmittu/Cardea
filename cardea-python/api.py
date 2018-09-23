@@ -11,11 +11,12 @@ api = Api(app)
 class CardeaSleep(Resource):
     def get(self):
         userid = request.args.get("userid")
+        auth_tok = request.args.get("auth_tok")
         today = datetime.date.today()
-        startdate = today.strftime('%Y-%m-%d')
-        enddate = (today - timedelta(days=30)).strftime('%Y-%m-%d')
-        sa = SleepAnalysis()
-        sa.sleep_and_exercise(userid, startdate, enddate)
+        enddate = today.strftime('%Y-%m-%d')
+        startdate = (today - timedelta(days=30)).strftime('%Y-%m-%d')
+        sa = SleepAnalysis(userid, auth_tok)
+        sa.sleep_and_exercise(startdate, enddate)
 
 api.add_resource(CardeaAuth, '/')
 
