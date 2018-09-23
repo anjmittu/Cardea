@@ -15,7 +15,7 @@ class CardeaSleep(Resource):
         today = datetime.date.today()
         enddate = today.strftime('%Y-%m-%d')
         startdate = (today - timedelta(days=30)).strftime('%Y-%m-%d')
-        sa = SleepAnalysis(userid, auth_tok)
+        sa = sleepAnalysis.SleepAnalysis(userid, auth_tok)
         return sa.sleep_and_exercise(startdate, enddate)
 
 
