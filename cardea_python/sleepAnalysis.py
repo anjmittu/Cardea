@@ -25,7 +25,7 @@ class SleepAnalysis:
 
         if not sleep_with_exercise:
             return avg_sleep_build.format(avg_sleep_without_hours, avg_sleep_without_minutes) + \
-                    "You could sleep longer if you exercised."
+                    "You might sleep longer if you exercised more often."
         elif not sleep_without_exercise:
             return avg_sleep_build.format(avg_sleep_with_hours, avg_sleep_with_minutes) + \
                     "You always exercise so you must sleep well :)"
@@ -34,9 +34,9 @@ class SleepAnalysis:
             avg_both_hours, avg_both_minutes = divmod(avg_both, 60)
             if avg_sleep_with > avg_sleep_without:
                 return avg_sleep_build.format(avg_both_hours, avg_both_minutes) + \
-                    "When you exercise you tend to get " + \
+                    "On days you exercise, you tend to get " + \
                     "{} more minutes of sleep".format(avg_sleep_with-avg_sleep_without)
             else:
                 return avg_sleep_build.format(avg_both_hours, avg_both_minutes) + \
-                    "When you exercise you tend to get " + \
+                    "On days you exercise, you tend to get " + \
                     "{} less minutes of sleep".format(avg_sleep_without-avg_sleep_with)
