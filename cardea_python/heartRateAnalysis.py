@@ -12,19 +12,17 @@ class heartRateAnalysis:
 
         heartRate = []
         weightLoss = []
-
         enddate = datetime.date.today()
 
         for week in range(weeks):
 
-            startdate = (enddate - timedelta(days=7))
+            startdate = (enddate - timedelta(days=6))
             heartRate_data = self.fb.get_avg_hearRate_by_date_range(startdate.strftime('%Y-%m-%d'), enddate.strftime('%Y-%m-%d'))
             try:
                 weightLoss_data = ((self.fb.get_weight_by_date(startdate.strftime('%Y-%m-%d'))["weight"][0]["weight"]) - (self.fb.get_weight_by_date(enddate.strftime('%Y-%m-%d'))["weight"][0]["weight"]))
             except IndexError:
                 weightLoss_data = 0;
             enddate = (startdate - timedelta(days=1))
-
             total, resting, fatBurn, cardio, peak = [0, 0, 0, 0, 0];
 
             for day in heartRate_data["activities-heart"]:
@@ -46,3 +44,32 @@ class heartRateAnalysis:
             weightLoss.append(weightLoss_data)
 
         return heartRate, weightLoss
+
+    def heartRate_and_exercise(self, weeks):
+
+        restingHeartRates = []
+        timesExercised = []
+        enddate = datetime.date.today()
+
+        for week in range(weeks):
+
+            startdate = (enddate - timedelta(days=6))
+            heartRate_data = self.fb.get_avg_hearRate_by_date_range(startdate.strftime('%Y-%m-%d'), enddate.strftime('%Y-%m-%d'))
+            enddate = (startdate - timedelta(days=1))
+
+            restingHeartRate_sum = 0;
+            days = 0;
+            times_exercised = 0;
+
+            print(heartRate_data)
+            for day in heartRate_data["activities-heart"]:
+                if "restingHeartRate" in day["value"]:
+                    restingHeartRate_sum += day["value"]["restingHeartRate"]
+                    days += 1
+                exercise_data = self.fb.get_exercise_by_date(day["dateTime"])
+                times_exercised += len(exercise_data["activities"])
+
+            restingHeartRates.append(restingHeartRate_sum/days)
+            timesExercised.append(times_exercised)
+
+        return restingHeartRates, timesExercised
