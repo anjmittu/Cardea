@@ -8,7 +8,6 @@ class FitbitApi:
         self.userid = userid
         self.header = {"Authorization": "Bearer " + auth_tok}
 
-
     def get_sleep_by_date_range(self, startdate, enddate):
         urlend = "sleep/date/{}/{}.json".format(startdate, enddate)
         r = requests.get(self.fitbit_url.format(self.userid, urlend), headers=self.header)
@@ -16,5 +15,15 @@ class FitbitApi:
 
     def get_exercise_by_date(self, date):
         urlend = "activities/date/{}.json".format(date)
+        r = requests.get(self.fitbit_url.format(self.userid, urlend), headers=self.header)
+        return r.json()
+
+    def get_avg_hearRate_by_date_range(self, startdate, enddate):
+        urlend = "activities/heart/date/{}/{}.json".format(startdate, enddate)
+        r = requests.get(self.fitbit_url.format(self.userid, urlend), headers=self.header)
+        return r.json()
+
+    def get_weight_by_date(self, date):
+        urlend = "body/log/weight/date/{}.json".format(date)
         r = requests.get(self.fitbit_url.format(self.userid, urlend), headers=self.header)
         return r.json()
