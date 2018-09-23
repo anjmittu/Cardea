@@ -3,6 +3,7 @@ from flask_restful import Resource, Api
 import datetime
 from datetime import timedelta
 import sleepAnalysis
+import heartRateAnalysis
 
 app = Flask(__name__)
 api = Api(app)
@@ -21,10 +22,11 @@ class CardeaSleep(Resource):
 class CardeaHeartRate(Resource):
     def get(self):
         userid = request.args.get("userid")
+        auth_tok = request.args.get("auth_tok")
         today = datetime.date.today()
         weeks = 12
-        hra = heartRateAnalysis()
-        hra.heartRate_and_weightLoss(userid, weeks)
+        hra = heartRateAnalysis.heartRateAnalysis(userid, auth_tok)
+        return hra.heartRate_and_weightLoss(weeks)
 
 api.add_resource(CardeaSleep, '/CardeaSleep')
 api.add_resource(CardeaHeartRate, '/CardeaHeartRate')
