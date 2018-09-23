@@ -9,6 +9,9 @@ namespace Cardea
 {
 	public partial class App : Application
 	{
+        public static string auth_token;
+        public static string userid;
+
 		public App ()
 		{
 			InitializeComponent();
