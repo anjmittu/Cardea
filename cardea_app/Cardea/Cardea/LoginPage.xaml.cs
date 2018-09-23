@@ -56,7 +56,6 @@ namespace Cardea
                 var content = new FormUrlEncodedContent(form);
 
                 var client = new HttpClient();
-                var authheader = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes("22D7B9:c501ba0677ae034ac4d64051695b1ffa")));
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.ASCII.GetBytes("22D7B9:c501ba0677ae034ac4d64051695b1ffa")));
                 var result = client.PostAsync("https://api.fitbit.com/oauth2/token", content).Result;
 
