@@ -1,4 +1,4 @@
-import fitbitapi
+import cardea_python.fitbitapi as fitbitapi
 
 class SleepAnalysis:
 
