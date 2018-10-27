@@ -6,11 +6,10 @@
              Title="Sleep">
     <ContentPage.Content>
         <StackLayout Padding="20" Margin="5">
-            <cv:CardView>
+            <cv:CardView CardViewHeightRequest="100" CardViewOutlineColor="Gray" CardViewOutlineColorThickness="2" CardViewHasShadow="True">
                 <cv:CardView.CardViewContent>
-                    <StackLayout>
-                        <Label Text="I am a label, inside a StackLayout inside the CardView Content"></Label>
-                        <Label Text="I may not look nice, but I don't have all my properties set."></Label>
+                    <StackLayout BackgroundColor="White">
+                        <Label FontSize="Medium" Text="Loading..." x:Name="CardeaSleep"></Label>
                     </StackLayout>
                 </cv:CardView.CardViewContent>
             </cv:CardView>
